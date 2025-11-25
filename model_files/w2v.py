@@ -2,6 +2,24 @@ import gensim
 import numpy as np
 import linecache
 
+def load_fasttext_embedding(word_list, uniform_scale, dimension_size):
+    # Path to your Uzbek embedding file
+    embed_file = 'embedding/cc.uz.300.vec'
+
+    print(f"Loading FastText embeddings from {embed_file}...")
+    # FastText .vec files are in the same format as Word2Vec text format
+    model = gensim.models.KeyedVectors.load_word2vec_format(embed_file, binary=False)
+
+    word_vectors = []
+    for word in word_list:
+        if word in model:
+            word_vectors.append(model[word])
+        elif word == '<pad>':
+            word_vectors.append(np.zeros(dimension_size, dtype=np.float32))
+        else:
+            # Initialize unknown words randomly
+            word_vectors.append(np.random.uniform(-uniform_scale, uniform_scale, dimension_size))
+    return word_vectors
 
 def load_w2v_embedding(word_list, uniform_scale, dimension_size):
     embed_file = '../../../code/embedding/GoogleNews-vectors-negative300.bin'

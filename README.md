@@ -7,6 +7,10 @@
 
 # Embedding Files
 
+### Install PyTorch 1.10 (Stable for legacy code) with CUDA 11.3 support
+`pip install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+`
+
 This folder should contain the embedding files used for the model.
 
 # Embedding Files

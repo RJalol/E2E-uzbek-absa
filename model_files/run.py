@@ -2,7 +2,7 @@ import os
 import argparse
 import datetime
 import torch
-import torchtext.data as data
+from torchtext.legacy import data
 from w2v import *
 
 from cnn_gate_aspect_model import CNN_Gate_Aspect_Text
@@ -13,6 +13,7 @@ from cnn_gate_aspect_model_atsa import CNN_Gate_Aspect_Text as CNN_Gate_Aspect_T
 import mydatasets as mydatasets
 from getsemeval import get_semeval, get_semeval_target, read_yelp
 import cnn_train
+import json
 
 parser = argparse.ArgumentParser(description='CNN text classificer')
 
@@ -33,10 +34,13 @@ parser.add_argument('-save-dir', type=str, default='snapshot', help='where to sa
 
 # data
 parser.add_argument('-shuffle', action='store_true', default=True, help='shuffle the data every epoch [default: True]')
+# parser.add_argument('-embed-dim', type=int, default=300, help='number of embedding dimension [default: 300]')
+# Change default embedding dimensions if needed (Uzbek vectors are 300d, matches default)
 parser.add_argument('-embed-dim', type=int, default=300, help='number of embedding dimension [default: 300]')
 parser.add_argument('-aspect_embed_dim', type=int, default=300, help='number of aspect embedding dimension [default: 300]')
 parser.add_argument('-unif', type=float, help='Initializer bounds for embeddings', default=0.25)
-parser.add_argument('-embed_file', default='w2v', help='w2v or glove')
+# parser.add_argument('-embed_file', default='w2v', help='w2v or glove')
+parser.add_argument('-embed_file', default='fasttext', help='w2v or glove or fasttext')
 parser.add_argument('-aspect_file', type=str, default='', help='aspect embedding')
 parser.add_argument('-years', type=str, default='14_15_16', help='data sets specified by the year, use _ to concatenate')
 parser.add_argument('-aspects', type=str, default='all', help='selected aspects, use _ to concatenate')
@@ -82,32 +86,55 @@ good_lap_attributes = ['battery#operation_performance', 'battery#quality', 'comp
 
 
 def load_semeval_data(text_field, as_field, sm_field, years, aspects, **kargs):
+    # Determine paths based on task (ACSA vs ATSA)
     if not args.atsa:
-        semeval_train, semeval_test = get_semeval(years, aspects, args.r_l, args.use_attribute)
+        # Aspect Category Dataset (ACSA)
+        base_path = 'data/asca/'
+        train_file = os.path.join(base_path, 'acsa_train.json')
+        test_file = os.path.join(base_path, 'acsa_test.json')
+        # Mapping "Hard" datasets to the "Mixed" variable used in the code
+        mixed_test_file = os.path.join(base_path, 'acsa_hard_test.json')
     else:
-        semeval_train, semeval_test = get_semeval_target(years, args.r_l)
+        # Aspect Term Dataset (ATSA)
+        base_path = 'data/asta/'
+        train_file = os.path.join(base_path, 'asta_train.json')
+        test_file = os.path.join(base_path, 'asta_test.json')
+        mixed_test_file = os.path.join(base_path, 'asta_hard_test.json')
 
-    predict_test = [{"aspect": "food",
-                     "sentiment": "positive",
-                     "sentence": "good food in cute - though a bit dank - little hangout, but service terrible"},
-                    {"aspect": "service",
-                     "sentiment": "negative",
-                     "sentence": "good food in cute - though a bit dank - little hangout, but service terrible"},
-                    {"aspect": "service",
-                     "sentiment": "negative",
-                     "sentence": "good food in cute - though a bit dank - little hangout, but service terrible"}
-                    ]
-    predict_data = mydatasets.SemEval(text_field, as_field, sm_field, predict_test)
+    print(f"Loading Train: {train_file}")
+    print(f"Loading Test: {test_file}")
+    print(f"Loading Hard/Mixed: {mixed_test_file}")
 
-    train_data, dev_data, mixed_data = mydatasets.SemEval.splits_train_test(text_field, as_field, sm_field,
-                                                     semeval_train, semeval_test)
+    # Helper to load JSON
+    def load_json(path):
+        with open(path, 'r', encoding='utf-8') as f:
+            return json.load(f)
 
+    # Load data directly from JSON
+    # Your JSONs are already in the "unrolled" format expected by the model
+    train_json = load_json(train_file)
+    test_json = load_json(test_file)
+    mixed_test_json = load_json(mixed_test_file)
+
+    # Create Dataset objects directly
+    # Note: We use test_json for 'dev_data' here as per the original repo's logic
+    # (evaluating on test set at end of epochs)
+    train_data = mydatasets.SemEval(text_field, as_field, sm_field, train_json)
+    dev_data = mydatasets.SemEval(text_field, as_field, sm_field, test_json)
+    mixed_data = mydatasets.SemEval(text_field, as_field, sm_field, mixed_test_json)
+
+    # Remove the dummy predict_data or keep it minimal
+    predict_data = mydatasets.SemEval(text_field, as_field, sm_field, [])
+
+    # Build vocabulary
     text_field.build_vocab(train_data, dev_data)
     as_field.build_vocab(train_data, dev_data)
     sm_field.build_vocab(train_data, dev_data)
+
+    # Create iterators
     train_iter, test_iter, mixed_test_iter, predict_iter = data.Iterator.splits(
                                 (train_data, dev_data, mixed_data, predict_data),
-                                batch_sizes=(args.batch_size, len(dev_data), len(mixed_data), len(predict_data)),
+                                batch_sizes=(args.batch_size, len(dev_data), len(mixed_data), 1),
                                 **kargs)
 
     return train_iter, test_iter, mixed_test_iter, predict_iter
@@ -147,7 +174,10 @@ args.kernel_sizes = [int(k) for k in args.kernel_sizes.split(',')]
 args.save_dir = os.path.join(args.save_dir, datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S'))
 
 for t in range(n_trials):
-    if args.embed_file == 'w2v':
+    if args.embed_file == 'fasttext':
+        print("Loading FastText pre-trained embedding (Uzbek)...")
+        word_vecs = load_fasttext_embedding(text_field.vocab.itos, args.unif, 300)
+    elif args.embed_file == 'w2v':
         print("Loading W2V pre-trained embedding...")
         word_vecs = load_w2v_embedding(text_field.vocab.itos, args.unif, 300)
     elif args.embed_file == 'glove':
@@ -221,7 +251,9 @@ for t in range(n_trials):
         print('\nLoading model from {}...'.format(args.snapshot))
         model.load_state_dict(torch.load(args.snapshot))
 
-    model = model.cuda()
+    # Only move to GPU if args.cuda is True (which checks if hardware is available)
+    if args.cuda:
+        model = model.cuda()
 
     # train or predict
     if args.sentence is not None:

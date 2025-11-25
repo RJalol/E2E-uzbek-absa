@@ -3,22 +3,18 @@ import os
 import random
 import tarfile
 from six.moves import urllib
-from torchtext import data
+from torchtext.legacy import data
 from torch.utils.data import Dataset
 
 
 def clean_str(string):
     """
-    Tokenization/string cleaning for all datasets except for SST.
-    Original taken from https://github.com/yoonkim/CNN_sentence/blob/master/process_data.py
+    Tokenization/string cleaning for Uzbek datasets.
     """
-    string = re.sub(r"[^A-Za-z0-9(),!?\'\`]", " ", string)
-    string = re.sub(r"\'s", " \'s", string)
-    string = re.sub(r"\'ve", " \'ve", string)
-    string = re.sub(r"n\'t", " n\'t", string)
-    string = re.sub(r"\'re", " \'re", string)
-    string = re.sub(r"\'d", " \'d", string)
-    string = re.sub(r"\'ll", " \'ll", string)
+    # Essential Uzbek characters like ' and ‘
+    # We will perform minimal cleaning here to preserve Uzbek morphology.
+
+    string = re.sub(r"[^A-Za-z0-9(),!?\'\`‘’]", " ", string)  # Added ‘ and ’ to allowed chars
     string = re.sub(r",", " , ", string)
     string = re.sub(r"!", " ! ", string)
     string = re.sub(r"\(", " \( ", string)
