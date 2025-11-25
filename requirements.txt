@@ -1,3 +1,6 @@
 torch
 gensim
 numpy
+lxml
+nltk
+simplejson
