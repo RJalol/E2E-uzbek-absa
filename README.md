@@ -18,13 +18,13 @@ You can download pre-trained FastText embeddings for the Uzbek language from the
 1.  **Common Crawl Vectors:**
     *   Visit: [https://fasttext.cc/docs/en/crawl-vectors.html](https://fasttext.cc/docs/en/crawl-vectors.html) [[9]](https://fasttext.cc/docs/en/crawl-vectors.html)
     *   Search for "Uzbek".
-    *   Download `cc.uz.300.vec.gz` or `cc.uz.300.bin.gz`.
+    *   Download `cc.uz.300.vec.gz` and `cc.uz.300.bin.gz`.
     
 **After downloading:**
 1.  Extract the files if they are zipped (`.zip` or `.gz`).
-2.  Place the `.vec` or `.bin` files in this `embedding/` directory.
+2.  Place the `.vec` and `.bin` files in this `embedding/` directory.
 3.  Update the `embed_file` path in your arguments or `w2v.py` if necessary.
-4. 
+
 ## ACSA
 python -m run -lr 1e-2 -batch-size 32  -verbose 1  -model CNN_Gate_Aspect    -embed_file glove  -r_l r  -epochs 13
 
