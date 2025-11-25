@@ -2,7 +2,9 @@
 
 
 # Instructions:
-Download glove or word2vec file and change the path in w2v.py correspondingly.
+  
+  Download word2vec from FastTEXT for Uzbek language file and we need to change the path in w2v.py correspondingly that works for Uzbek language current version is for English language ready. This TODO task.
+
 # Embedding Files
 
 This folder should contain the embedding files used for the model.
