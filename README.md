@@ -7,28 +7,24 @@ Download glove or word2vec file and change the path in w2v.py correspondingly.
 
 This folder should contain the embedding files used for the model.
 
+# Embedding Files
+
+This folder should contain the embedding files used for the model.
+
 ## How to get Embeddings
 
 You can download pre-trained FastText embeddings for the Uzbek language from the following sources:
 
-1.  **Official FastText Website (Wiki word vectors):**
-    *   Visit: [https://fasttext.cc/docs/en/pretrained-vectors.html](https://fasttext.cc/docs/en/pretrained-vectors.html) [[8]](https://fasttext.cc/docs/en/pretrained-vectors.html)
-    *   Search for "Uzbek" (code: `uz`).
-    *   Download the `bin` or `vec` file (e.g., `wiki.uz.zip`).
-
-2.  **Common Crawl Vectors:**
+1.  **Common Crawl Vectors:**
     *   Visit: [https://fasttext.cc/docs/en/crawl-vectors.html](https://fasttext.cc/docs/en/crawl-vectors.html) [[9]](https://fasttext.cc/docs/en/crawl-vectors.html)
     *   Search for "Uzbek".
     *   Download `cc.uz.300.vec.gz` or `cc.uz.300.bin.gz`.
-
-3.  **Hugging Face (Facebook FastText Vectors):**
-    *   Link: [https://huggingface.co/facebook/fasttext-uz-vectors](https://huggingface.co/facebook/fasttext-uz-vectors) [[4]](https://huggingface.co/facebook/fasttext-uz-vectors/tree/main)
-
+    
 **After downloading:**
 1.  Extract the files if they are zipped (`.zip` or `.gz`).
 2.  Place the `.vec` or `.bin` files in this `embedding/` directory.
 3.  Update the `embed_file` path in your arguments or `w2v.py` if necessary.
-
+4. 
 ## ACSA
 python -m run -lr 1e-2 -batch-size 32  -verbose 1  -model CNN_Gate_Aspect    -embed_file glove  -r_l r  -epochs 13
 

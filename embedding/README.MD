@@ -6,17 +6,12 @@ This folder should contain the embedding files used for the model.
 
 You can download pre-trained FastText embeddings for the Uzbek language from the following sources:
 
-1.  **Official FastText Website (Wiki word vectors):**
-    *   Visit: [https://fasttext.cc/docs/en/pretrained-vectors.html](https://fasttext.cc/docs/en/pretrained-vectors.html) [[8]](https://fasttext.cc/docs/en/pretrained-vectors.html)
-    *   Search for "Uzbek" (code: `uz`).
-    *   Download the `bin` or `vec` file (e.g., `wiki.uz.zip`).
-
-2.  **Common Crawl Vectors:**
+1.  **Common Crawl Vectors:**
     *   Visit: [https://fasttext.cc/docs/en/crawl-vectors.html](https://fasttext.cc/docs/en/crawl-vectors.html) [[9]](https://fasttext.cc/docs/en/crawl-vectors.html)
     *   Search for "Uzbek".
     *   Download `cc.uz.300.vec.gz` or `cc.uz.300.bin.gz`.
 
-3.  **Hugging Face (Facebook FastText Vectors):**
+2.  **Hugging Face (Facebook FastText Vectors):**
     *   Link: [https://huggingface.co/facebook/fasttext-uz-vectors](https://huggingface.co/facebook/fasttext-uz-vectors) [[4]](https://huggingface.co/facebook/fasttext-uz-vectors/tree/main)
 
 **After downloading:**
