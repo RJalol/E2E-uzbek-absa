@@ -1,0 +1,1527 @@
+[
+    {
+        "sentence": "Oxirida biz 2 marta otga buyurtma berdik: ot kolbasa solingan bulyonda BESHBARMAK noodle xamiri - juda sho'r, ot bilan aralashtirilgan NORIN sovuq kesilgan mini noodle - juda mazali, qo'y sho'rva - juda qizg'in, go'sht bilan aralashtirilgan HALEEM bug'doy - jigarrang jo'xori uniga o'xshaydi - shilimshiq, lekin juda mazali.",
+        "aspect": "otga",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Gapirishga til ojiz , faqat his-tuyg'ular.",
+        "aspect": "his-tuyg'ular.",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Taomlari mazali, narxlari hamyonbop",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Shubhasiz, osh hayratiga sazovor bo'ladigan yagona joy!",
+        "aspect": "joy",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "osh juda mazali.",
+        "aspect": "osh",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Nasib qilsa jonli musiqa bo'ladi.",
+        "aspect": "muhit",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "3) ko'p xilma-xillik mavjud emas.",
+        "aspect": "ko'p xilma-xillik",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Mazali lekin O'zbekiston uchun qimmat",
+        "aspect": "narx",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Ovqat mazali, taomlarga gap yo'q, lekin juda qimmat!",
+        "aspect": "taomlarga",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Atmosfera ajoyib ofitsiantlar a'lo darajada, pivo zo'r, men bu ajoyib pivodan yaxshiroq ta'mga ega bo'lgani uchun yoqdi.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Xodimlar mijozlarni kutib olib, bo'sh stolga kuzatib qo'yishadi, tashrif buyuruvchilarning ko'pligiga qaramay, xizmat ko'rsatish tez, tez ovqatlanish imkonini beradi.",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Nafis va mazali taomlari bilan ajoyib joy!",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Men bron qilishni tavsiya qilaman, chunki bugungi kunda har bir stolda bron belgisi bor.",
+        "aspect": "boshqalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ajoyib va osoyishta oilaviy restoran!",
+        "aspect": "restoran",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Mazali osh, tezkor xizmat, tashrif buyurishingizni maslahat beraman.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Narxlar o'rtacha qiymatdan yuqori.",
+        "aspect": "Narxlar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Ushbu muassasada sizga yaxshi kayfiyat kafolatlangan!",
+        "aspect": "Ushbu muassasada",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Mahalliy aholi ovqatlanishadi, ya'ni sayyohlar mumkin",
+        "aspect": "boshqalar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Umid qilamanki, agar ular narxlari bilan menyu taqdim qilsalar (hozir faqat narxlarsiz menyu mavjud) va hozir ham yaxshi xizmat qilsalar, sizga 5/5 beradilar.",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Sekin xizmat, yaxshi palov, sho'r salatlar",
+        "aspect": "xizmat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Bekor qilingan bayram.",
+        "aspect": "boshqalar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Menyuning 2/3 qismi yo'q.",
+        "aspect": "boshqalar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Salatlar mazali, taomlar juda uzoq vaqt kutilgandek pishiriladi, lekin ular o'rtacha ta'mga ega.",
+        "aspect": "taomlar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Tovuq o'rtacha edi, guruch yaxshi edi.",
+        "aspect": "Tovuq",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Olomon va mazali",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Mazali oshxona, shirinliklar zo'r🔥 ayniqsa pista rulosi.",
+        "aspect": "oshxona",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Xodimlar ajoyib edi.",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Narxlar biroz qimmat.",
+        "aspect": "Narxlar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Hammasi super",
+        "aspect": "Hammasi",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ajoyib joy, xizmat yuqori darajada!",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Qulay, ammo zamonaviy.",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Men har bir sayyohga buni sinab ko'rishni maslahat beraman",
+        "aspect": "sayyohga",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ovqat mazali edi.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "osh mazali, tez xizmat , juda ko'p miqdorda pishiriladi!",
+        "aspect": "osh",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Dabdala",
+        "aspect": "boshqalar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Shu yerdamisiz!",
+        "aspect": "yerdamisiz",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Oshning o'zi juda mazali.",
+        "aspect": "Oshning",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Kola har bir uzb restorani kabi muzlatgichda saqlanmagan.",
+        "aspect": "ovqat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Lekin eng muhimi, bu yerda yoqimli jonli musiqa ostida go‘zal milliy muhitda tushlik va kechki ovqatdan bahramand bo‘lishingiz, mazali o‘zbek taomlarini tatib ko‘rishingiz mumkin.",
+        "aspect": "musiqa",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ovqat mazali va juda arzon, yaxshi sokin joy, xodimlarning ingliz tilini bilishi cheklangan",
+        "aspect": "narx",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ofitsiantlar bilan xizmat 0",
+        "aspect": "Ofitsiantlar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Joylashuvi yaxshi, taomlari mazali.",
+        "aspect": "taomlari",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Tug'ilgan kunlar uchun qulay joy",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Yaxshi, qulay, mazali, chiroyli, yoqimli tushlik yoki kechki ovqat uchun yana nima kerak?",
+        "aspect": "tushlik yoki kechki ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Mazali restoran, samimiy ofitsiantlar va mazali taomlar!",
+        "aspect": "taomlar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bilaman, band o‘rindiqlar alohida ajratilgan o‘rindiqlar deb belgilangan, lekin O‘zbekistonning irqchi ekanligi kulgili.",
+        "aspect": "band o‘rindiqlar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Palovi bilan mashhur O‘zbekistonga borib guruch yemay bo‘lmaydi.",
+        "aspect": "boshqalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Chiroyli interyer, tashqi teras, menyuda juda xilma-xil mahsulotlar: rus, yevropa, mahalliy oshxonalar",
+        "aspect": "interyer",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Har safar men ovqatdan zavqlanaman.",
+        "aspect": "ovqatdan",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Yaxshi joy, yaxshi ta'mli pivo",
+        "aspect": "pivo",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Juda mazali taom, yaxshi portsiyalar va juda mos narxlarda.",
+        "aspect": "portsiyalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bu yerda juda noqulay va u ovqat olib kelganida 2 soat kutish kerak.",
+        "aspect": "ovqat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Restoranda o'zimni juda noqulay his qildim.",
+        "aspect": "muhit",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Oila yoki do'stlar bilan ovqatlanish uchun ajoyib joy",
+        "aspect": "joy",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Lekin yaqinda restoranni almashtirdim.",
+        "aspect": "boshqalar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Minus faqat shovqin uchun va stol konfiguratsiyasi juda yaxshi emas",
+        "aspect": "shovqin",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Ajoyib!! Haqiqiy, hammasi mazali",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Men Tavsiya qilaman",
+        "aspect": "boshqalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ovqatlanish uchun yaxshi joy",
+        "aspect": "joy",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "osh yaxshi emas, juda sovuq... Bunday oshni Chimkentda ham yeyish mumkin ((((",
+        "aspect": "osh",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Mazali taom, hamyonbop narx, yaxshi xizmat va halol, ishonchli taom.",
+        "aspect": "narx",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Toshkentdagi eng zo'r restoranlardan biri .. Mazali taomlar va bezaklar go'yo O'rta asr saroyi ichidagidek ajoyib .. Ishchilar juda yoqimli .. Narxlari esa aql bovar qilmaydigan darajada arzon Muhammad al-Qahtaniy",
+        "aspect": "narx",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Sifatli taomlar, qulay stollar, yoqimli muhit.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Dollardan so'mga bu ajoyib qiymatga aylantiradi.",
+        "aspect": "Dollardan so'mga",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Men beshta ofitsiantga 7 marta yolvordim.",
+        "aspect": "xizmat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Haqiqiy ta'mga va ajoyib Mezbonga ega Toshkentdagi go'zal hind restorani.",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Avtoturargoh mavjud emas, siz yo'l bo'ylab to'xtashingiz mumkin.",
+        "aspect": "Avtoturargoh",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Samimiy xodimlar, qulay muhit, mazali taomlar va ajoyib pivo",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "20 daqiqa stolga kelmagan ofitsiant.",
+        "aspect": "ofitsiant",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Yaxshi oshxona.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ovqat yaxshi edi, lekin \"Bamberger\" qora rangdagi suv va bo'yoqli ichimlikka o'xshardi.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Salom",
+        "aspect": "boshqalar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "O'zbekistondagi eng zo'r",
+        "aspect": "boshqalar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Joylashuvi yaxshi, ko'rinishi zo'r, lekin ofitsiantlar haqiqatan ham yaxshimas.",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Hisobni kuzatib boring, e'tiborga olinadi, ofitsiantlar ba'zida xato qilishadi.",
+        "aspect": "Hisobni",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Ajoyib joy, xizmat yuqori darajada!",
+        "aspect": "joy",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bir necha darajadagi juda katta zal Ko'p stollar.",
+        "aspect": "muhit",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Biz ushbu muassasaga ikkinchi marta keldik, lekin qo'riqchi aytganidek, nufuzli mehmonlar uchun yopiq ziyofat bo'lmoqda.",
+        "aspect": "muassasaga",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Yo'q, va bu emas ... palov yo'q ... 6 turdagi choydan faqat 2 tasi bor ... yaxshi, choy ... siz 3 yulduzni tayyorlashingiz mumkin: 1.",
+        "aspect": "choy",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Sayohatimiz davomida biz o'rtacha miqdordagi \"mahalliy\" joylarda ovqatlandik - barchasi mehmondo'st va samimiy edi, bu erdan tashqari. Oxiri chiqib ketdik.",
+        "aspect": "xizmat",
+        "sentiment": "conflict"
+    },
+    {
+        "sentence": "Salat yoki bifshteksda biror narsa noto'g'ri bo'lgan deb o'ylayman, chunki uyga qaytganimdan keyin darhol oshqozon bilan bog'liq muammolar paydo bo'ldi.",
+        "aspect": "ovqat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Yaxshi oshxona.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ichi biroz qorong'i, atigi 2-3 xil pivo, kichik stollar.",
+        "aspect": "stollar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Hisobni kuzatib boring, e'tiborga olinadi, ofitsiantlar ba'zida xato qilishadi.",
+        "aspect": "xizmat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Yaxshi joy, juda qulay.",
+        "aspect": "joy",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Mazali taomlar, samimiy ofitsiantlar, qulay muhit.",
+        "aspect": "taomlar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Juda chiroyli shinam joy.",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "osh yaxshi emas, juda sovuq... Bunday oshni Chimkentda ham yeyish mumkin ((((",
+        "aspect": "ovqat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Nechi yildan buyon xizmat ko'rsatayotgan bu restaran naxotki xaliyam kancha mikdorda taomlar qilish meyorini bilmaydi?Dasturxonda qo'l artish uchun oddiy qo'l artish kogozlari yo'k.Bir pulga qimmat va arzimaydigan restaran.Meni fikrimcha baxosi 1 va inson dam olib ovqatlanish meyori past.",
+        "aspect": "narx",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Umuman buyurtma berishni tavsiya etmayman, keyingi safar buyurtma bermaymiz",
+        "aspect": "buyurtma berishni",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Men hammaga maslahat beraman",
+        "aspect": "boshqalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Hozir bu yerda Rayxon Milliy taomlari a'lo darajada va xizmat ham a'lo ko'rsatmoqda.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Tavsiya qilaman.",
+        "aspect": "boshqalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Eng yaxshi joy",
+        "aspect": "joy",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Zaytun moyidagi eng sevimli, ikki portsiya go'sht bilan!",
+        "aspect": "Zaytun",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Men sizni darhol ogohlantiraman, bu restoran emas, balki oddiy kafe.",
+        "aspect": "muhit",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Turkiya fuqarosi sifatida aytishim kerakki, O‘zbekiston bo‘ylab safarim chog‘ida turk restoranida kechki ovqatdan juda xursand bo‘ldim.",
+        "aspect": "restoranida",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Oddiy joy va narxlar o'rtacha",
+        "aspect": "joy",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Yaxshi.",
+        "aspect": "boshqalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Juda qulay va chiroyli restoran.",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Biz ushbu muassasaga ikkinchi marta keldik, lekin qo'riqchi aytganidek, nufuzli mehmonlar uchun yopiq ziyofat bo'lmoqda.",
+        "aspect": "xizmat",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Qiziqarli tovuq va yasmiq sho'rva",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Evropa ko'rinishidagi qiz ayniqsa mehribon edi, afsuski, ismini unutib qo'ydi.",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ajoyib joy, yoqimli muhit va ajoyib pivo👍👍",
+        "aspect": "joy",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Yaxshi joy va taomlar ham yaxshi, hamyonbop narxlar",
+        "aspect": "joy",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ba'zida shovqinli kompaniyalar bor.",
+        "aspect": "kompaniyalar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Juda samimiy xizmat.",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ovqatlanish zavqini biz olmadik, lekin elita restoranidagi kabi narxni to'ladik.",
+        "aspect": "Ovqatlanish",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Juda chiroyli shinam joy.",
+        "aspect": "joy",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Toshkentdagi eng yaxshi bifshteks bo‘lsa kerak",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bu safar men alyuminiyning kichik qismini topdim!",
+        "aspect": "alyuminiyning",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Mazali taomlar va yaxshi joy",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Chunaman - premium restoran, lekin mehmonga ozgina e'tibor berib ishlasa to'g'ri bo'lardi!",
+        "aspect": "xizmat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Musiqa baland ovozda eshitilmaydi, stolda suhbatdosh bilan osongina muloqot qilishingiz mumkin.",
+        "aspect": "stolda",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ammo madaniy dastur, albatta, zerikarli.",
+        "aspect": "madaniy dastur",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Ajoyib joy!",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "O‘zbekistonga kelib guruch yeyish joyini qidirmang.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "O'ylaymanki, hatto eng tezkor odam ham baxtli bo'ladi.",
+        "aspect": "boshqalar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Salatlarning yaxshi tanlovi, mazali va hamyonbob, xizmat yaxshi darajada",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Yuqori sifatli taom, Toshkentdagi ajoyib hind restoranlaridan biri",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Yuqori narxlar ovqat ta'miga mos kelmadi",
+        "aspect": "narxlar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Suratdagi tort - bu menyuga kirgan: shokolad va asalga juda boy",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Do'stlaringiz yoki oilangiz bilan sayr qilish uchun juda qulay joy.",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Biz anʼanaviy oʻzbek muhitida tushlik qildik, oʻzbek taomlari va jonli musiqadan bahramand boʻldik.",
+        "aspect": "tushlik qildik",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Men buni hammaga tavsiya qilaman) Ular juda mazali taomlar, xushmuomala xodimlar va juda shinam, go'zal chiroyli musiqa - bu shunchaki ertak) Albatta tashrif buyuring !",
+        "aspect": "boshqalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "go'zal va go'zal joy",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bu menga juda yoqdi.",
+        "aspect": "boshqalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "1 ta porsiyada uchun bir paket tuz.",
+        "aspect": "ovqat",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Mazali oshxona, samimiy xodimlar!",
+        "aspect": "xodimlar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ovqat yaxshi edi, lekin ofitsiant buyurtma berishda yordam bera olmadi va buyurtmani umuman tushunmadi.",
+        "aspect": "ofitsiant",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Evropa ko'rinishidagi qiz ayniqsa mehribon edi, afsuski, ismini unutib qo'ydi.",
+        "aspect": "qiz",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Juda qulay va chiroyli restoran.",
+        "aspect": "restoran",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Turkiya",
+        "aspect": "Turkiya",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Ajoyib taomlari bor ajoyib joy ...",
+        "aspect": "joy",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Yuqori sifatli taom, Toshkentdagi ajoyib hind restoranlaridan biri",
+        "aspect": "taom",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "👍👍👍👍👍👍👍👍👍",
+        "aspect": "boshqalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ajoyib muhit.",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ulardan uchtasi hindlarning ta'miga ham o'xshamaydi ...",
+        "aspect": "ovqat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Toshkentdagi eng zo'r restoranlardan biri .. Mazali taomlar va bezaklar go'yo O'rta asr saroyi ichidagidek ajoyib .. Ishchilar juda yoqimli .. Narxlari esa aql bovar qilmaydigan darajada arzon Muhammad al-Qahtaniy",
+        "aspect": "taomlar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ichi biroz qorong'i, atigi 2-3 xil pivo, kichik stollar.",
+        "aspect": "pivo",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Ajoyib quyma pivo - filtrlanmagan, \"lager\" va \"qorong'i\".",
+        "aspect": "\"lager\" va \"qorong'i\"",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Qimmat emas.",
+        "aspect": "narx",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ichmagan oshning haqini to‘lashga majbur bo‘lasan!",
+        "aspect": "boshqalar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Kalyan dahshatli, umuman 210 000 mingga arzimaydi.",
+        "aspect": "narx",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Kechki ovqat.",
+        "aspect": "Kechki ovqat",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Kabobiga gap yo'q",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Sifatli xizmat va mazali taom👍 Sifatli xizmat va mazali taomlar",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "O'rta Osiyodagi eng yaxshi taom.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "mening kutganlarimga javob bermadi, baland ovozda yoqimsiz musiqa, irland pivosi yo'q, yomon xizmat, pivo yaxshi emas, ishoning, bundan ham yaxshiroq joylar bor",
+        "aspect": "irland pivosi",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Solyanka qo'zi go'shtidan tayyorlanadi ... qayerda ko'rgan bo'lsa, qo'y go'shti qo'zichoqqa qo'shilgan.",
+        "aspect": "Solyanka",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Men ofitsiantni 10 daqiqa kutdim, xuddi men yo'qdek o'tib ketgan kishiga o'girildim.",
+        "aspect": "ofitsiantni",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Ajoyib kafe, juda yaxshi Yevropa va milliy taomlar.",
+        "aspect": "taomlar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bunday ma'murlarga ko'proq.",
+        "aspect": "ma'murlarga",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Mazali oshxona, shirinliklar zo'r🔥 ayniqsa pista rulosi.",
+        "aspect": "shirinliklar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Mazali!!!!",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ajoyib restoran!",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Xizmat tez, xushmuomala xodimlar.",
+        "aspect": "Xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Avvalgi holatga qaytish uchun 2 yil orqaga qaytishim kerak",
+        "aspect": "holatga",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Xizmat juda yaxshi va taom juda mazali!",
+        "aspect": "Xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Yaxshisini sinab ko'ring do'stlar...",
+        "aspect": "do'stlar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Biroz gavjum, lekin baribir Rayhon shoxobchalarida hamma joyda bo'lgani kabi mazali taomlar, menejer ko'rinmaydi, styuardessa bor-yo'g'i 1 nafar va u juda band ko'rinadi, chunki u juda ko'p buyurtmalar...",
+        "aspect": "taomlar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Reklamada ular hali ham o'zlarini jazz bari sifatida ko'rsatishadi, lekin aslida jazz yo'q, do'konlar uchun musiqa yangraydi, iltimosimizga binoan ofitsiant jazz musiqasini qo'ydirib berdi.",
+        "aspect": "jazz",
+        "sentiment": "conflict"
+    },
+    {
+        "sentence": "Ularda faqat palov bor shekilli, baribir biz xohlagan narsa, keyin salat, suv, choy, non va hokazo... Menyu bor edi, shuning uchun ular ko'proq bo'lishi mumkin, lekin u faqat o'zbek tilida.",
+        "aspect": "salat, suv, choy, non va hokazo",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Guruch sotadigan yaxshi restoran",
+        "aspect": "restoran",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Narxlar qimmat.",
+        "aspect": "Narxlar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Biftek, vino juda yaxshi edi, LEKIN... biz pishloqqa buyurtma berdik, uni yigitlar olib kelishni unutib qo'yishdi; Biz limonli choy buyurdik, ular esa oddiy choyni olib kelishdi.",
+        "aspect": "xizmat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Ko'p odamlar va oilalar bilan gavjum joy, shuning uchun siz yaxshi ovqatlanayotganingizni bilasiz.",
+        "aspect": "ovqatlanayotganingizni",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bir vaqtlar bu restoran o'zining mazali taomlari va yaxshi xizmati bilan meni hayratga solgan edi.",
+        "aspect": "taomlari",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Xizmat biroz sekin.",
+        "aspect": "Xizmat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Yaxshi pivo",
+        "aspect": "pivo",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ko'p odamlar va oilalar bilan gavjum joy, shuning uchun siz yaxshi ovqatlanayotganingizni bilasiz.",
+        "aspect": "joy",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Bizga yoqdi, u yerdan to'q qorin bilan qaytdik, dekor shinam, \"Kapris\" salati unchalik yaxshi emas, baliq mazali, ofitsiantlar samimiy.",
+        "aspect": "dekor",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Narxlar ham o'rtacha!",
+        "aspect": "Narxlar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Ko'pchilik maslahat berdi.",
+        "aspect": "boshqalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bu katta kamchilik.",
+        "aspect": "boshqalar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Narxlar yaxshi.",
+        "aspect": "narx",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "To'y oshi juda mazali.",
+        "aspect": "To'y oshi",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Juda mazali",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ta'mli, juda zo'r.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Joylashuvi yaxshi, ko'rinishi zo'r, lekin ofitsiantlar haqiqatan ham yaxshimas.",
+        "aspect": "Joylashuvi",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ovqat mazali va juda arzon, yaxshi sokin joy, xodimlarning ingliz tilini bilishi cheklangan",
+        "aspect": "xodimlarning",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Bolalar bilan bemalol vaqt o'tkazishingiz va ovqatlanishingiz mumkin bo'lgan ajoyib joy!",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Oila va do'stlar bilan vaqt o'tkazish uchun yaxshi joy.",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Yangi sushi, chiroyli joy, yapon uslubidagi maxsus xonalar.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Chiroyli, qulay muhit, ajoyib qahva.",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Toshkentdagi eng zo'r restoranlardan biri .. Mazali taomlar va bezaklar go'yo O'rta asr saroyi ichidagidek ajoyib .. Ishchilar juda yoqimli .. Narxlari esa aql bovar qilmaydigan darajada arzon Muhammad al-Qahtaniy",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Toshkentdagi eng mazali salatlarni shu yerda tatib ko‘rdim.",
+        "aspect": "salatlarni",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ilgari yaxshiroq edi, hozir xizmat va ta'm bir xil emas, yomon emas, lekin bu turdagi muassasa uchun biroz qimmat.",
+        "aspect": "narx",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "xizmat muvaffaqiyatsiz tugadi",
+        "aspect": "xizmat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Turli va juda mazali taomlari bilan (milliydan yevropachagacha) juda qulay, samimiy joy.",
+        "aspect": "taomlari",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Kafe-restoranning shakli g'ayrioddiy.",
+        "aspect": "Kafe-restoranning",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Yaxshi ovqat, o'rtacha narxda.",
+        "aspect": "narx",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "osh mazali, tez xizmat , juda ko'p miqdorda pishiriladi!",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Yaxshi turk taomlari yonimda!",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Ovqat unchalik mazali emas, bu diskoteka va restorani orasidagi joy.",
+        "aspect": "muhit",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Qiziqarli tovuq va yasmiq sho'rva",
+        "aspect": "tovuq",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Mazali taom, ajoyib xizmat, arzon narxlar va yoqimli atmosfera.",
+        "aspect": "atmosfera",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Restoranda o'zimni juda noqulay his qildim.",
+        "aspect": "Restoranda",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Afg'on pulaosiga buyurtma berish uchun ingliz tilida gapiradiganlar tilni yaxshi bilmas edi, lekin go'sht biroz sho'r, Afg'oniston noni juda yaxshi edi",
+        "aspect": "Afg'oniston noni",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Men bu taomni menyudan chiqarib tashlashni taklif qildim va xo'jayin bilan gaplashishni so'radim.",
+        "aspect": "xo'jayin",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Juda yaxshi taom, ayniqsa mahalliy variantlarni tanlasangiz.",
+        "aspect": "mahalliy variantlarni",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Xizmat yaxshi",
+        "aspect": "Xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Oila va do'stlar bilan vaqt o'tkazish uchun yaxshi joy.",
+        "aspect": "joy",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Yaqinda ta’mirlangan an’anaviy o‘zbek restorani gavjum.",
+        "aspect": "boshqalar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "To'rt kishilik ovqatlanish va xizmat ko'rsatish, men faqat yapon menyusini ajratib ko'rsatishim mumkin.",
+        "aspect": "boshqalar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Ajoyib tajriba.",
+        "aspect": "boshqalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Men xursandman",
+        "aspect": "boshqalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Super restoran.",
+        "aspect": "restoran",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bu mahalliy palov markazi bo'lib, u erga asosan mahalliy aholi boradi, lekin biz uchun do'stona.",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bu yerda juda yaxshi vaqt o‘tkazdim.",
+        "aspect": "yerda",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Lekin joyga mos.",
+        "aspect": "boshqalar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Yaxshi xizmat, ajoyib oshxona va o'rtacha narxlar",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bu yerda Irlandiya bayrog'ini hisobga olmaganda, irlandcha hech narsa yo'q.",
+        "aspect": "hech narsa",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Bu bizning fikrimizcha yog'li taom edi va juda mazali edi.",
+        "aspect": "yog'li taom",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Ba'zi xodimlar ingliz tilini yaxshi bilishadi.",
+        "aspect": "Ba'zi xodimlar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Men tushlik qilish uchun to'xtashni taklif qilmayman.",
+        "aspect": "ovqat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Restoran emas, balki umidsizlik!",
+        "aspect": "boshqalar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Yaxshi joy",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Narxlar juda yuqori...",
+        "aspect": "narx",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Masalan, 2016-yil 27-oktabr soat 13:24 da administrator kameradan qarab turgan edi, ertaga kelishsin.",
+        "aspect": "boshqalar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Men bu erga boshqa kelmayman (bu erda raqobat yo'q, siz odatdagidek ovqatlanishingiz mumkin bo'lgan joy yo'q) shuning uchun ular bo'shashishdi",
+        "aspect": "bu erga",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Yaxshi, do'stona ofitsiantlar",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Juda mazali taom, yaxshi portsiyalar va juda mos narxlarda.",
+        "aspect": "narxlarda",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Yaxshi restoran.",
+        "aspect": "restoran",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "QO'O'L MAKABIR E'tiborsiz 👎🏻👎🏻👎🏻👎🏻",
+        "aspect": "xizmat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Toshkentdagi eng zo'r restoranlardan biri .. Mazali taomlar va bezaklar go'yo O'rta asr saroyi ichidagidek ajoyib .. Ishchilar juda yoqimli .. Narxlari esa aql bovar qilmaydigan darajada arzon Muhammad al-Qahtaniy",
+        "aspect": "Ishchilar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Olivier salatasi mening eng sevimli salatim edi.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bu yerga futbol tomosha qilish va chet elliklar bilan suhbatlashish uchun keling.",
+        "aspect": "muhit",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Bu, mening fikrimcha, Yunusoboddagi eng yaxshi restoranlardan biri, juda yaxshi joy u erda qulay va taomlari mazali va u erda ham juda chiroyli.",
+        "aspect": "taomlari",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Juda mazali taom.",
+        "aspect": "taom",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Barcha sharhlarni o'qib chiqqach, sizga kim xizmat qilishi muhimligini angladim.",
+        "aspect": "sharhlarni",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Alisher, salom;)",
+        "aspect": "boshqalar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Mazali karakchay, iflos stollar, hind taomlari, lekin mazali emas, xizmat ko'rsatish 20%, lekin aslida hech qanday xizmat",
+        "aspect": "muhit",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "2018-yil fevral oyida edi.",
+        "aspect": "boshqalar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Mazali taomlar, samimiy ofitsiantlar, qulay muhit.",
+        "aspect": "ofitsiantlar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Kolbasa, kolbasa, \"Mir delikatesi\" kolbasasidan foydalanganidek, halol emas.",
+        "aspect": "ovqat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Yaxshi, zamonaviy musiqa!",
+        "aspect": "musiqa",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Men buni tavsiya qilmayman.",
+        "aspect": "boshqalar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Juda samimiy xodimlar, mazali tayyorlangan taomlar, yuqorida aytib o'tilganidek - turkcha.",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "yaxshi joy emas, xizmat yomon",
+        "aspect": "xizmat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Osh markazi",
+        "aspect": "boshqalar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Shunchaki suyaklar qolmagan desalar, bunchalik xafa bo'lmasdik.",
+        "aspect": "suyaklar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Ta'mi o'rtacha edi va xizmat juda sekin",
+        "aspect": "xizmat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Lekin unchalik mazali biftek emas.",
+        "aspect": "biftek",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Yaxshi o'yin maydonchasi, mazali taomlar, faqat ofitsiantlarning biroz vaqti yo'q.",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Oziq-ovqat uzoq vaqt davomida va qisman olib kelishdi.",
+        "aspect": "Oziq-ovqat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Yaxshi joy, juda qulay.",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Juda samimiy xodimlar, hashamatli muhit, mazali taomlar, ajoyib taqdimot, baqlajon salatiga oshiq bo'ldi.",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Biz Iskandari kabobi, Ezema salati, Vok / Sac aralash tovuq va go'sht va baklava buyurtma qildik.",
+        "aspect": "ovqat",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Fotosuratga tushmaganim achinarli, atmosfera butunlay hayratda qoldi)",
+        "aspect": "atmosfera",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Qolgan osh markazlaridan farqli o'laroq, oshlar juda katta qozonlarda va katta hajmlarda tayyorlanadi.",
+        "aspect": "katta qozonlarda",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Shubhasiz, osh hayratiga sazovor bo'ladigan yagona joy!",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Mahalliy pivo arzon, ammo mazasiz.",
+        "aspect": "ovqat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Juda qimmat narxlar.",
+        "aspect": "narx",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Va eng muhimi, o'yin maydonchasi mavjud.",
+        "aspect": "muhit",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "vaziyat normal, Lekin ular pivoni bokalga solishmaydi!",
+        "aspect": "boshqalar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Toshkentdagi orol uslubidagi go'zal pab.",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Yaxshi joy, sokin musiqa.",
+        "aspect": "joy",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Sifatli xizmat",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Shovqinli musiqa, lekin taom va narx ajoyib",
+        "aspect": "narx",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Xorijiy sarmoyadorlar uchun oilaviy kechki ovqat yoki mehmon xizmatini tashkil qilish uchun yaxshi va qulay joy.",
+        "aspect": "mehmon xizmatin",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Biftek, vino juda yaxshi edi, LEKIN... biz pishloqqa buyurtma berdik, uni yigitlar olib kelishni unutib qo'yishdi; Biz limonli choy buyurdik, ular esa oddiy choyni olib kelishdi.",
+        "aspect": "pishloqqa",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Biz go'sht (shavla) buyurdik, ular buyurtma keltirishdi, go'sht g'alati rangdagi uchlamchi ,+ sho'rvada go'shtdan ko'ra ko'proq yog ' ham bor.Q",
+        "aspect": "go'sht",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Ta’bimga ko‘ra, Toshkentdagi eng zo‘r osh!",
+        "aspect": "osh",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Mazali milliy taomlar, narxlar qolganlaridan yuqori.",
+        "aspect": "milliy taomlar,",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Mazali osh😊, qimmat emas👍 yoqdi.",
+        "aspect": "narx",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Xizmat yaxshi, narxlar o'rtacha",
+        "aspect": "narx",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Karta orqali to‘lov bilan qandaydir tushunarsiz voqea... Biz to‘rt kishidan iborat kompaniya sifatida ushbu muassasada 3 soat qolishimiz uchun salkam 5 000 000 so‘m qoldirganmiz.",
+        "aspect": "narx",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Ko'plab mahalliy aholi guruhlar bo'lib ovqatlanishadi, oshxona kechqurungacha ochiq va taomlar standart pubdagi kabi.",
+        "aspect": "taomlar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Agar siz chet ellik bo'lsangiz, men tavsiya etmayman.",
+        "aspect": "chet ellik",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bu har doim juda toza, toza idishlar, toza stollar ... Oziq-ovqat sifati o'rtacha darajadan yuqori !!",
+        "aspect": "ovqat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Super",
+        "aspect": "boshqalar",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Mazali taom",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Umid qilamanki, agar ular narxlari bilan menyu taqdim qilsalar (hozir faqat narxlarsiz menyu mavjud) va hozir ham yaxshi xizmat qilsalar, sizga 5/5 beradilar.",
+        "aspect": "xizmat",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Lekin joyga mos.",
+        "aspect": "joyga",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Restoran buzilgan.",
+        "aspect": "boshqalar",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Standart Milli Taomlar, garchi pafos va glamur tegishi bilan.",
+        "aspect": "pafos va glamur",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Mazali osh, tezkor xizmat, tashrif buyurishingizni maslahat beraman.",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bu safar ulgurmadim – yarim soatda palov yeb qo‘yishdi.",
+        "aspect": "palov",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Ofitsiantlar bilan xizmat 0",
+        "aspect": "xizmat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Umuman nol, muomila nol",
+        "aspect": "muomila",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Toshkentdagi eng zo'r restoranlardan biri .. Mazali taomlar va bezaklar go'yo O'rta asr saroyi ichidagidek ajoyib .. Ishchilar juda yoqimli .. Narxlari esa aql bovar qilmaydigan darajada arzon Muhammad al-Qahtaniy",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bu haqiqiy milliy o'zbek taomlari!!",
+        "aspect": "taomlari",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Oshxonada zararkunandalar paydo bo'lganga o'xshaydi😱",
+        "aspect": "muhit",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Men bu taomni menyudan chiqarib tashlashni taklif qildim va xo'jayin bilan gaplashishni so'radim.",
+        "aspect": "taomni",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Iltimos, ustida ishlang.",
+        "aspect": "ustida ishlang",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Nisbatan qimmat oziq-ovqat.",
+        "aspect": "narx",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Zo'r osh",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Chiroyli, qulay muhit, ajoyib qahva.",
+        "aspect": "qahva",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Mahalliy hunarmandchilik mazali emas",
+        "aspect": "hunarmandchilik",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Chunaman - premium restoran, lekin mehmonga ozgina e'tibor berib ishlasa to'g'ri bo'lardi!",
+        "aspect": "premium restoran",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Milliy taomlar",
+        "aspect": "boshqalar",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Samimiy xodimlar, qulay muhit, mazali taomlar va ajoyib pivo",
+        "aspect": "xizmat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "chiroyli va tartibli",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Atmosfera yaxshi emas",
+        "aspect": "Atmosfera",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Chilonzor filiali ancha yaxshi.",
+        "aspect": "Chilonzor filiali",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bizga yoqdi, u yerdan to'q qorin bilan qaytdik, dekor shinam, \"Kapris\" salati unchalik yaxshi emas, baliq mazali, ofitsiantlar samimiy.",
+        "aspect": "baliq",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "U yerda juda qimmat ovqat bor",
+        "aspect": "narx",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Xizmat uchun 20% 😳.",
+        "aspect": "narx",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Ko'p odamlar va oilalar bilan gavjum joy, shuning uchun siz yaxshi ovqatlanayotganingizni bilasiz.",
+        "aspect": "muhit",
+        "sentiment": "neutral"
+    },
+    {
+        "sentence": "Pishiriq juda mazali",
+        "aspect": "ovqat",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Agar siz restoranga bormoqchi bo'lsangiz, bu restoranga emas.",
+        "aspect": "restoran",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Chiroyli hovli.",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    },
+    {
+        "sentence": "Bu haqiqatan ham haddan tashqari qimmat va oziq-ovqat unchalik yaxshi emas.",
+        "aspect": "ovqat",
+        "sentiment": "negative"
+    },
+    {
+        "sentence": "Keng to'xtash joyi",
+        "aspect": "muhit",
+        "sentiment": "positive"
+    }
+]
