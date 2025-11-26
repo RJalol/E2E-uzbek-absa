@@ -23,3 +23,6 @@ Thumbs.db
 # Embedding files
 embedding/*
 !embedding/README.MD
+/snapshot/atsa-with-fastText/CNN_Gate_Aspect_epoch_1.pt
+/snapshot/asca-with-fastText/CNN_Gate_Aspect_epoch_1.pt
+/snapshot/asca-with-fastText/CNN_Gate_Aspect_epoch_2.pt
