@@ -1,7 +1,3 @@
-Here is the updated, professional `README.md` documentation in Markdown format. I have removed the original paper reference and added the requested placeholder for your future publication.
-
------
-
 # Aspect Based Sentiment Analysis (ABSA) for Uzbek Language
 
 This repository contains a comprehensive implementation of **Aspect Based Sentiment Analysis (ABSA)** specifically tailored for the **Uzbek language**, utilizing **Gated Convolutional Networks (GCAE)**. The project has been adapted to support Uzbek linguistic datasets, FastText embeddings, and includes a suite of professional analytics and inference tools.
@@ -155,6 +151,19 @@ Arguments:
 -category: Comma-separated list of aspect categories (e.g., "food,service").
 -term: Comma-separated list of aspect terms (e.g., "osh,waiter").
 
+```text
+Result:
+------------------------------------------------------------
+TYPE       | TARGET               | PREDICTION           | CONF
+------------------------------------------------------------
+Category   | ovqat                | POSITIVE             | 98.2%
+Category   | xizmat               | POSITIVE             | 92.3%
+------------------------------------------------------------
+Term       | osh                  | POSITIVE             | 98.6%
+Term       | xizmat               | POSITIVE             | 95.9%
+============================================================
+```
+
   * **Note**: The `-aspect` argument must match one of the aspect categories present in your training data (e.g., `food`, `service`, `price`, `ambience`).
 
 ## ⚙️ Advanced Configuration
@@ -181,4 +190,3 @@ If you use this code or dataset in your research, please cite the following publ
   booktitle={ [CONFERENCE/JOURNAL NAME] },
   year={2025}
 }
-```
