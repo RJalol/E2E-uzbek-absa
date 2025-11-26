@@ -148,8 +148,12 @@ To test your trained model on a single sentence, use the `inference.py` script.
 **Example:**
 
 ```bash
-python model_files/inference.py -snapshot "snapshot/2025-11-25_23-25-05/best_model.pt" -sentence "Osh juda mazali edi" -aspect "food"
+python model_files/inference_triple.py -sentence "Osh juda yoqdi, xizmat sifati ham zo'r" -category "ovqat,xizmat" -term "osh,xizmat"
 ```
+Arguments:
+-sentence: The input text to analyze.
+-category: Comma-separated list of aspect categories (e.g., "food,service").
+-term: Comma-separated list of aspect terms (e.g., "osh,waiter").
 
   * **Note**: The `-aspect` argument must match one of the aspect categories present in your training data (e.g., `food`, `service`, `price`, `ambience`).
 
