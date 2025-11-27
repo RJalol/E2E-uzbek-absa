@@ -1,26 +1,30 @@
-# Aspect Based Sentiment Analysis (ABSA) for Uzbek Language
+# End-to-End Aspect-Based Sentiment Analysis (ABSA) for Uzbek Language
 
-This repository contains a comprehensive implementation of **Aspect Based Sentiment Analysis (ABSA)** specifically tailored for the **Uzbek language**, utilizing **Gated Convolutional Networks (GCAE)**. The project has been adapted to support Uzbek linguistic datasets, FastText embeddings, and includes a suite of professional analytics and inference tools.
+This repository contains a state-of-the-art implementation of **End-to-End Aspect Based Sentiment Analysis** tailored for the **Uzbek language**. The system operates in a two-stage pipeline to strictly identify aspect terms and classify their sentiment polarity.
 
-The system is designed to handle two primary sub-tasks:
+## 🧠 System Architecture
 
-1.  **Aspect Category Sentiment Analysis (ACSA)**: Predicting sentiment (Positive, Negative, Neutral) for a specific aspect category (e.g., `food`, `service`, `price`) within a sentence.
-2.  **Aspect Term Sentiment Analysis (ATSA)**: Predicting sentiment for specific aspect terms explicitly mentioned in the text.
+The solution uses a pipeline approach to ensure high accuracy and interpretability:
+
+1.  **Stage 1: Aspect Term Extraction (ATE)**
+    * **Model:** Bidirectional LSTM with a Conditional Random Field (BiLSTM-CRF).
+    * **Goal:** Sequence labeling to identify precise aspect terms (e.g., "osh", "xizmat") using BIO tagging.
+2.  **Stage 2: Sentiment Classification (ASC)**
+    * **Model:** Gated Convolutional Networks (GCAE).
+    * **Goal:** Predicts sentiment (Positive, Negative, Neutral) for the aspect terms extracted in Stage 1.
 
 ## 📌 Features
 
-  * **Gated Convolutional Networks**: Implements an efficient GCAE architecture optimized for aspect-specific sentiment extraction.
-  * **Uzbek Language Support**: Fully integrated with Uzbek FastText (`cc.uz.300.vec`) embeddings and custom tokenization.
-  * **Robust Training Pipeline**: Enhanced training loop featuring **Early Stopping**, **L2 Regularization**, and **Best Model Checkpointing** to prevent overfitting.
-  * **Professional Analytics**: automated generation of training visualizations, including Loss/Accuracy curves and Confusion Matrices.
-  * **Inference CLI**: A dedicated script for easy, interactive testing of the trained model on new sentences.
-  * **Legacy Environment Compatibility**: Tuned to operate seamlessly with specific PyTorch/TorchText versions required for reproducibility.
+* **Uzbek Language Support**: Customized for Uzbek morphology using FastText (`cc.uz.300.vec`) embeddings.
+* **Robust Extraction**: BiLSTM-CRF architecture ensures valid tag sequences (e.g., `I-ASP` cannot follow `O`).
+* **Gated Sentiment Analysis**: GCAE model efficiently filters context to focus specifically on the target aspect.
+* **Professional Logging**: Automated CSV logging, loss/accuracy visualization, and best model checkpointing.
 
 ## 🛠️ Installation
 
-This project requires a specific Python environment to support the model architecture. It is highly recommended to use **Python 3.9**.
+**Prerequisites:** Python 3.8+
 
-### 1\. Clone the Repository
+### 1. Clone & Setup
 
 ```bash
 git clone <your-repo-url>
@@ -56,6 +60,9 @@ pip install -r requirements.txt
 ```text
 .
 ├── data/
+│   ├── absa/               # Aspect Extraction Data (BIO Format)
+│   │   ├── train.json      # Training data for ATE
+│   │   └── test.json       # Testing data for ATE
 │   ├── asca/               # Aspect Category Datasets (JSON)
 │   │   ├── acsa_train.json
 │   │   └── acsa_test.json
@@ -66,7 +73,11 @@ pip install -r requirements.txt
 │   ├── cc.uz.300.vec       # Place your downloaded FastText vectors here
 │   └── README.MD
 ├── model_files/
-│   ├── run.py              # Main entry point for training
+│   ├── train_ate.py        # Training script for Aspect Extraction
+│   ├── dataset_ate.py      # Data loader for BIO format
+│   ├── model_ate.py        # BiLSTM-CRF Architecture
+│   ├── run.py              # Training script for Sentiment (GCAE)
+│   ├── run_inference_ate.py # Inference script for Aspects
 │   ├── cnn_train.py        # Training loop, validation, and logging logic
 │   ├── cnn_gate_aspect_model.py # Neural network architecture
 │   ├── inference.py        # CLI script for prediction
@@ -86,9 +97,22 @@ You must download pre-trained Uzbek FastText vectors to initialize the model.
 2.  Search for **Uzbek** and download `cc.uz.300.vec.gz`.
 3.  Extract the file and place `cc.uz.300.vec` inside the `embedding/` directory.
 
-### 2\. Datasets
+### 2\. Aspect Extraction Data (ATE)
 
-Ensure your training and testing data is placed in `data/asca/` (for categories) or `data/asta/` (for terms). The files must be in **JSON format** with the following structure:
+Place your sequence labeling data in `data/absa/train.json`. Format:
+
+```json
+[
+  {
+    "tokens": ["Osh", "juda", "mazali", "edi"],
+    "labels": ["B-ASP", "O", "O", "O"]
+  }
+]
+```
+
+### 3\. Sentiment Classification Data (ASC)
+
+Place your sentiment data in `data/asca/acsa_train.json`. Format:
 
 ```json
 [
@@ -104,12 +128,21 @@ Ensure your training and testing data is placed in `data/asca/` (for categories)
   }
 ]
 ```
-
 ## 🚀 Usage
 
 ### 1\. Training the Model
+### Stage 1: Train Aspect Extractor (BiLSTM-CRF)
 
-To train the model, run the following command. By default, this runs the **ACSA** task.
+Train the model to recognize aspect terms from raw text.
+
+```bash
+python model_files/train_ate.py --epochs 50 --batch_size 8 --lr 0.002
+```
+
+  * **Output:** Best model saved to `snapshot/ate_model/best_ate.pt`.
+
+
+### Stage 2: To train the model, run the following command. By default, this runs the **ACSA** task.
 
 ```bash
 python model_files/run.py -model CNN_Gate_Aspect -embed_file fasttext -epochs 10 -batch-size 32
