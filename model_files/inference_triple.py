@@ -20,10 +20,10 @@ from model_files.getsemeval import get_semeval, get_semeval_target
 #  CONFIGURATION: UPDATE THESE PATHS!
 # ==========================================
 # 1. ACSA (Category) Model Snapshot
-ACSA_SNAPSHOT = "snapshot/asca-with-fastText/best_model.pt"
+ACSA_SNAPSHOT = "snapshot/acsa/best_model.pt"
 
 # 2. ATSA (Term) Model Snapshot (TRAIN THIS FIRST!)
-ATSA_SNAPSHOT = "snapshot/atsa-with-fastText/best_model.pt"
+ATSA_SNAPSHOT = "snapshot/atsa/best_model.pt"
 
 
 # ==========================================

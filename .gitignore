@@ -21,8 +21,11 @@ __pycache__/
 Thumbs.db
 
 # Embedding files
+*.pt
 embedding/*
 !embedding/README.MD
-/snapshot/atsa-with-fastText/CNN_Gate_Aspect_epoch_1.pt
-/snapshot/asca-with-fastText/CNN_Gate_Aspect_epoch_1.pt
-/snapshot/asca-with-fastText/CNN_Gate_Aspect_epoch_2.pt
+/snapshot/atsa/CNN_Gate_Aspect_epoch_1.pt
+/snapshot/acsa/CNN_Gate_Aspect_epoch_1.pt
+/snapshot/acsa/CNN_Gate_Aspect_epoch_2.pt
+snapshot/ate/best_ate.pt
+snapshot/acsa/best_model.pt

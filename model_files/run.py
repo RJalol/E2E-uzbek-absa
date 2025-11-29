@@ -89,14 +89,14 @@ def load_semeval_data(text_field, as_field, sm_field, years, aspects, **kargs):
     # Determine paths based on task (ACSA vs ATSA)
     if not args.atsa:
         # Aspect Category Dataset (ACSA)
-        base_path = 'data/asca-with-fastText/'
+        base_path = 'data/acsa/'
         train_file = os.path.join(base_path, 'acsa_train.json')
         test_file = os.path.join(base_path, 'acsa_test.json')
         # Mapping "Hard" datasets to the "Mixed" variable used in the code
         mixed_test_file = os.path.join(base_path, 'acsa_hard_test.json')
     else:
         # Aspect Term Dataset (ATSA)
-        base_path = 'data/atsa-with-fastText/'
+        base_path = 'data/atsa/'
         train_file = os.path.join(base_path, 'asta_train.json')
         test_file = os.path.join(base_path, 'asta_test.json')
         mixed_test_file = os.path.join(base_path, 'asta_hard_test.json')

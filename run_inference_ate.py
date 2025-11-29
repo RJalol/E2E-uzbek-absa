@@ -96,7 +96,7 @@ def predict(sentence, model, word2idx, device):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--sentence', type=str, required=True, help="Sentence to analyze")
-    parser.add_argument('--checkpoint', type=str, default="snapshot/ate_model/best_ate.pt")
+    parser.add_argument('--checkpoint', type=str, default="snapshot/ate/best_ate.pt")
     parser.add_argument('--embed_file', type=str, default="embedding/cc.uz.300.vec")
     args = parser.parse_args()
 

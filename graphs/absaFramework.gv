@@ -1,0 +1,130 @@
+digraph Uzbek_ABSA_Framework {
+    // Global layout: Left -> Right flow
+    rankdir=LR;
+    bgcolor="white";
+    splines=ortho; // Professional orthogonal lines
+    nodesep=0.6;
+    ranksep=0.8;
+    fontname="Arial";
+
+    // Default node styling
+    node [shape=box style="rounded,filled" fontname="Arial" fontsize=10 penwidth=1.5];
+    edge [fontname="Arial" fontsize=9 color="#555555" penwidth=1.2];
+
+    // ===== 1. Data Source =====
+    InputReviews [
+        label=<<B>Input Data</B><BR/>Uzbek Restaurant Reviews<BR/>(UzABSA corpus)>,
+        fillcolor="#FFF2CC", color="#D6B656"
+    ];
+
+    // ===== 2. Preprocessing (Uzbek FST) =====
+    subgraph cluster_preproc {
+        label=<<B>Text Preprocessing &amp; Morphology</B>>;
+        fontsize=12;
+        style="rounded,filled";
+        color="#E1E1E1";
+        fillcolor="#F9F9F9";
+
+        PreprocBlock [
+            shape=plaintext
+            label=<
+                <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="8" BGCOLOR="white">
+                  <TR><TD ALIGN="LEFT" BGCOLOR="#EFEFEF"><B>Uzbek FST Pipeline</B></TD></TR>
+                  <TR><TD ALIGN="LEFT">1. Tokenization</TD></TR>
+                  <TR><TD ALIGN="LEFT">2. Stemming (Lexicon Lookup)</TD></TR>
+                  <TR><TD ALIGN="LEFT">3. Affix Identification</TD></TR>
+                  <TR><TD ALIGN="LEFT">4. Morphological Tagging</TD></TR>
+                </TABLE>
+            >
+        ];
+    }
+
+    // ===== 3. Embedding Layer =====
+    Embeddings [
+        label=<<B>Contextual Representation</B><BR/>FastText (cc.uz.300) / BERT>,
+        shape=box, fillcolor="#DAE8FC", color="#6C8EBF", height=2.5
+    ];
+
+    // ===== 4. NEW: Aspect Extraction Layer (BiLSTM-CRF) =====
+    subgraph cluster_extraction {
+        label=<<B>Stage 1: Joint Aspect Extraction Layer</B>>;
+        fontsize=12;
+        style="rounded,filled";
+        color="#B1DDF0";
+        fillcolor="#E1F5FE";
+
+        // Shared Encoder
+        BiLSTM_Encoder [
+            label=<<B>BiLSTM Encoder</B><BR/>(Shared Latent Context)>,
+            fillcolor="#B3E5FC", color="#0288D1"
+        ];
+
+        // Head 1: ATE
+        CRF_Block [
+            label=<<B>CRF Layer</B><BR/>(Sequence Labeling)>,
+            fillcolor="#FFFFFF", color="#0288D1"
+        ];
+        Output_ATE [
+            label=<<B>Aspect Terms</B><BR/>(e.g., "Osh", "Xizmat")>,
+            shape=ellipse, style=filled, fillcolor="#4FC3F7", color="#0277BD"
+        ];
+
+        // Head 2: ACC
+        ACC_Classifier [
+            label=<<B>Multi-Label Classifier</B><BR/>(Attention-based)>,
+            fillcolor="#FFFFFF", color="#0288D1"
+        ];
+        Output_ACC [
+            label=<<B>Aspect Categories</B><BR/>(e.g., Food, Service)>,
+            shape=ellipse, style=filled, fillcolor="#81D4FA", color="#0277BD"
+        ];
+
+        // Flow inside Extraction
+        BiLSTM_Encoder -> CRF_Block;
+        BiLSTM_Encoder -> ACC_Classifier;
+        CRF_Block -> Output_ATE [label="BIO Tags"];
+        ACC_Classifier -> Output_ACC [label="Sigmoid"];
+    }
+
+    // ===== 5. Sentiment Analysis Layer (GCAE) =====
+    subgraph cluster_sentiment {
+        label=<<B>Stage 2: Targeted Sentiment Analysis (GCAE)</B>>;
+        fontsize=12;
+        style="rounded,filled";
+        color="#D5E8D4";
+        fillcolor="#F0F8DB";
+
+        GCAE_Encoder [
+            label=<<B>Gated CNN Encoder</B><BR/>(Context Modeling)>,
+            fillcolor="#D5E8D4", color="#82B366"
+        ];
+
+        Gating_Mechanism [
+            label=<<B>Gating Mechanism</B><BR/>(Filter Context by Aspect)>,
+            shape=diamond, style=filled, fillcolor="#FFFFFF", color="#82B366"
+        ];
+
+        Output_Sentiment [
+            label=<<B>Sentiment Polarity</B><BR/>(Pos, Neg, Neu)>,
+            shape=doubleoctagon, style=filled, fillcolor="#82B366", fontcolor="white", color="#335533"
+        ];
+
+        // Flow inside Sentiment
+        GCAE_Encoder -> Gating_Mechanism;
+        Gating_Mechanism -> Output_Sentiment [label="Softmax"];
+    }
+
+    // ===== MAIN CONNECTIVITY =====
+    InputReviews -> PreprocBlock;
+    PreprocBlock -> Embeddings;
+
+    // Embeddings feed BOTH models
+    Embeddings -> BiLSTM_Encoder [penwidth=2.0];
+    Embeddings -> GCAE_Encoder [color="#999999", style=dashed, label="raw tokens"];
+
+    // The Critical Link: Aspect Terms from Stage 1 feed into GCAE Gating in Stage 2
+    Output_ATE -> Gating_Mechanism [penwidth=2.5, color="#D7362E", label=" targets "];
+
+    // Optional: Categories can also inform sentiment (if model supported)
+    Output_ACC -> Output_Sentiment [style=dotted, color="#999999", label=" context "];
+}

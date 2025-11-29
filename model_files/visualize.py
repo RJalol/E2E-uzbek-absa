@@ -16,14 +16,14 @@ def plot_training_history(csv_path, save_dir):
 
     # 1. Plot Loss (Common to all models)
     plt.figure(figsize=(10, 5))
-    plt.plot(df['epoch'], df['train_loss'], label='Train Loss', marker='o')
-    plt.plot(df['epoch'], df['val_loss'], label='Validation Loss', marker='o')
+    plt.plot(df['epoch'], df['train_loss'], label='Train Loss')
+    plt.plot(df['epoch'], df['val_loss'], label='Validation Loss')
     plt.title('Training vs Validation Loss')
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
     plt.legend()
-    plt.grid(True)
-    plt.savefig(os.path.join(save_dir, 'loss_curve.png'))
+    # Grid removed
+    plt.savefig(os.path.join(save_dir, 'loss_curve_with_FastText.png'))
     print(f"[-] Saved loss_curve.png to {save_dir}")
     plt.close()
 
@@ -33,26 +33,26 @@ def plot_training_history(csv_path, save_dir):
 
         # Plot Tagging Accuracy
         plt.figure(figsize=(10, 5))
-        plt.plot(df['epoch'], df['train_tag_acc'], label='Train Tag Acc', marker='o', color='purple')
-        plt.plot(df['epoch'], df['val_tag_acc'], label='Val Tag Acc', marker='o', color='orange')
+        plt.plot(df['epoch'], df['train_tag_acc'], label='Train Tag Acc', color='purple')
+        plt.plot(df['epoch'], df['val_tag_acc'], label='Val Tag Acc', color='orange')
         plt.title('Aspect Term Extraction (Tagging) Accuracy')
         plt.xlabel('Epochs')
         plt.ylabel('Accuracy')
         plt.legend()
-        plt.grid(True)
+        # Grid removed
         plt.savefig(os.path.join(save_dir, 'tag_accuracy_curve.png'))
         print(f"[-] Saved tag_accuracy_curve.png to {save_dir}")
         plt.close()
 
         # Plot Category Accuracy
         plt.figure(figsize=(10, 5))
-        plt.plot(df['epoch'], df['train_cat_acc'], label='Train Cat Acc', marker='o', color='green')
-        plt.plot(df['epoch'], df['val_cat_acc'], label='Val Cat Acc', marker='o', color='red')
+        plt.plot(df['epoch'], df['train_cat_acc'], label='Train Cat Acc', color='green')
+        plt.plot(df['epoch'], df['val_cat_acc'], label='Val Cat Acc', color='red')
         plt.title('Aspect Category Detection Accuracy')
         plt.xlabel('Epochs')
         plt.ylabel('Accuracy')
         plt.legend()
-        plt.grid(True)
+        # Grid removed
         plt.savefig(os.path.join(save_dir, 'cat_accuracy_curve.png'))
         print(f"[-] Saved cat_accuracy_curve.png to {save_dir}")
         plt.close()
@@ -61,14 +61,14 @@ def plot_training_history(csv_path, save_dir):
     elif 'train_acc' in df.columns:
         print("[-] Detected Single-Task Log. Generating standard accuracy plot...")
         plt.figure(figsize=(10, 5))
-        plt.plot(df['epoch'], df['train_acc'], label='Train Accuracy', marker='o')
-        plt.plot(df['epoch'], df['val_acc'], label='Validation Accuracy', marker='o')
+        plt.plot(df['epoch'], df['train_acc'], label='Train Accuracy')
+        plt.plot(df['epoch'], df['val_acc'], label='Validation Accuracy')
         plt.title('Training vs Validation Accuracy')
         plt.xlabel('Epochs')
         plt.ylabel('Accuracy (%)')
         plt.legend()
-        plt.grid(True)
-        plt.savefig(os.path.join(save_dir, 'accuracy_curve.png'))
+        # Grid removed
+        plt.savefig(os.path.join(save_dir, 'accuracy_curve_with_FastText.png'))
         print(f"[-] Saved accuracy_curve.png to {save_dir}")
         plt.close()
 
@@ -76,8 +76,8 @@ def plot_training_history(csv_path, save_dir):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-log_dir', type=str, required=True,
-                        help='Path to the snapshot directory containing training_log.csv')
+                        help='Path to the snapshot directory containing training_log_with_FastText.csv')
     args = parser.parse_args()
 
-    csv_path = os.path.join(args.log_dir, 'training_log.csv')
+    csv_path = os.path.join(args.log_dir, 'training_log_with_FastText.csv')
     plot_training_history(csv_path, args.log_dir)

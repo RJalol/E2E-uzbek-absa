@@ -10,8 +10,8 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Gets .../E2E-uzbek-absa
 PROJECT_ROOT = os.path.dirname(BASE_DIR)  # Gets .../E2E-uzbek-absa
 
 # Define data directories
-ACSA_DIR = os.path.join(PROJECT_ROOT, 'data', 'asca-with-fastText')
-ASTA_DIR = os.path.join(PROJECT_ROOT, 'data', 'atsa-with-fastText')
+ACSA_DIR = os.path.join(PROJECT_ROOT, 'data', 'acsa')
+ASTA_DIR = os.path.join(PROJECT_ROOT, 'data', 'atsa')
 
 
 def load_and_group_json(file_path):
@@ -57,7 +57,7 @@ def load_and_group_json(file_path):
 
 def get_semeval(years, aspects, rest_lap='r', use_attribute=False, dedup=False):
     """
-    Loads ACSA (Aspect Category) data from your 'data/asca-with-fastText' folder.
+    Loads ACSA (Aspect Category) data from your 'data/acsa' folder.
     """
     train_path = os.path.join(ACSA_DIR, 'acsa_train.json')
     test_path = os.path.join(ACSA_DIR, 'acsa_test.json')
@@ -73,7 +73,7 @@ def get_semeval(years, aspects, rest_lap='r', use_attribute=False, dedup=False):
 
 def get_semeval_target(years, rest_lap='rest', dedup=False):
     """
-    Loads ATSA (Aspect Term) data from your 'data/atsa-with-fastText' folder.
+    Loads ATSA (Aspect Term) data from your 'data/atsa' folder.
     """
     train_path = os.path.join(ASTA_DIR, 'asta_train.json')
     test_path = os.path.join(ASTA_DIR, 'asta_test.json')

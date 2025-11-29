@@ -30,7 +30,6 @@ class CRF(nn.Module):
 
         seq_length, batch_size = tags.shape
 
-        # 1. Calculate Score (Numerator)
         score = self.start_transitions[tags[0]]
         score += emissions[0, torch.arange(batch_size), tags[0]]
 
@@ -38,22 +37,12 @@ class CRF(nn.Module):
             score += self.transitions[tags[i - 1], tags[i]] * mask[i]
             score += emissions[i, torch.arange(batch_size), tags[i]] * mask[i]
 
-        # --- CRITICAL FIX START ---
         # Find the index of the last valid token for each batch
-        # mask is (seq_len, batch), sums to length. index is length - 1
         seq_ends = mask.long().sum(dim=0) - 1
-
-        # Gather the tags at the last valid positions
         last_tags = tags.gather(0, seq_ends.unsqueeze(0)).squeeze(0)
-
-        # Add end transition score based on the REAL last tag, not the padding
         score += self.end_transitions[last_tags]
-        # --- CRITICAL FIX END ---
 
-        # 2. Calculate Log Z (Denominator)
         log_Z = self._compute_log_partition(emissions, mask)
-
-        # 3. Log Likelihood
         ll = score - log_Z
 
         if reduction == 'none':
@@ -112,8 +101,7 @@ class CRF(nn.Module):
             best_tags = torch.where(m.unsqueeze(1), best_prev, best_tags.unsqueeze(1)).squeeze(1)
             best_paths.insert(0, best_tags.unsqueeze(1))
 
+        # FIX: The result is already (Batch, Seq), do not transpose!
         best_paths = torch.cat(best_paths, dim=1)
-        if self.batch_first:
-            best_paths = best_paths.transpose(0, 1)
 
         return best_paths.tolist()

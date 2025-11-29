@@ -18,7 +18,7 @@ from model_files.getsemeval import get_semeval
 # ==========================================
 #  CONFIGURATION
 # ==========================================
-DEFAULT_SNAPSHOT = "snapshot/asca-with-fastText/best_model.pt"
+DEFAULT_SNAPSHOT = "snapshot/acsa/best_model.pt"
 
 
 # ==========================================

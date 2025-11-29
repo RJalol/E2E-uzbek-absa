@@ -57,7 +57,7 @@ def train(train_iter, dev_iter, mixed_test_iter, model, args, text_field, aspect
     if not os.path.isdir(args.save_dir):
         os.makedirs(args.save_dir)
 
-    log_path = os.path.join(args.save_dir, 'training_log.csv')
+    log_path = os.path.join(args.save_dir, 'training_log_with_FastText.csv')
     with open(log_path, 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(['epoch', 'train_loss', 'train_acc', 'val_loss', 'val_acc', 'time'])
