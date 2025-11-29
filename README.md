@@ -83,7 +83,7 @@ pip install -r requirements.txt
 │   ├── inference.py        # CLI script for prediction
 │   ├── visualize.py        # Script for generating analysis graphs
 │   └── ...
-├── snapshot/               # Stores saved models and training logs
+├── snapshot/               # Stores snapshot of models and training logs with visualizations
 └── requirements.txt
 ```
 
@@ -209,7 +209,7 @@ You can fine-tune the model using the following arguments in `run.py`:
 | `-dropout` | `0.5` | Dropout rate for regularization. |
 | `-kernel-num` | `100` | Number of filters per kernel size. |
 | `-kernel-sizes` | `3,4,5` | Comma-separated filter sizes for the CNN. |
-| `-embed_file` | `w2v` | Embedding type (`w2v`, `glove`, or `fasttext`). |
+| `-embed_file` | `w2v` | Embedding type (`w2v`, or `fasttext`). |
 | `-l2` | `0` | L2 Regularization weight. |
 
 ## 📄 Citation
