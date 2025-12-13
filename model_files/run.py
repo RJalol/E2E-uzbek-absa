@@ -3,6 +3,7 @@ import argparse
 import datetime
 import torch
 from torchtext.legacy import data
+from morph_tokenizer import morph_tokenize
 from w2v import *
 
 from cnn_gate_aspect_model import CNN_Gate_Aspect_Text
@@ -146,13 +147,14 @@ time_stamps_trials = []
 
 # load data
 print("Loading data...")
-text_field = data.Field(lower=True, tokenize='moses')
+text_field = data.Field(lower=True, tokenize=morph_tokenize)
 
 if not args.aspect_phrase:
     as_field = data.Field(sequential=False)
 else:
     print('phrase')
-    as_field = data.Field(lower=True, tokenize='moses')
+    # Aspects might also need morphological segmentation if they are multi-word
+    as_field = data.Field(lower=True, tokenize=morph_tokenize)
 
 sm_field = data.Field(sequential=False)
 years = [int(i) for i in args.years.split('_')]

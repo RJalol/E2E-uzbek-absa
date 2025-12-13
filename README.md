@@ -128,6 +128,34 @@ Place your sentiment data in `data/asca/acsa_train.json`. Format:
   }
 ]
 ```
+## 🧩 Morphological-aware Tokenizer
+
+As detailed in **Section 3.1** of the paper, this repository now supports **Morphologically-Informed Tokenization**. This addresses the agglutinative nature of Uzbek by segmenting words into valid morphemes (e.g., `dehqonchiliklaridan` -> `['dehqon', 'chilik', 'lari', 'dan']`) before feeding them into the model.
+
+### Prerequisites
+To use the FST-based tokenizer, you must install **Apertium-Uzbek**:
+
+1.  **Install Apertium Core:**
+    ```bash
+    sudo apt-get install apertium apertium-dev
+    ```
+2.  **Install HFST:**
+    ```bash
+    pip install hfst
+    ```
+3.  **Download Uzbek Data:**
+    Clone the `apertium-uzb` repository and compile:
+    ```bash
+    git clone [https://github.com/apertium/apertium-uzb.git](https://github.com/apertium/apertium-uzb.git)
+    cd apertium-uzb
+    ./autogen.sh && make
+    ```
+4.  **Configuration:**
+    Point the tokenizer to your compiled `.automorf.bin` file in `model_files/morph_tokenizer.py` or place it in the `embedding/` folder.
+
+### Usage
+The `run.py` script is updated to use `morph_tokenize` by default. This will automatically segment input reviews during training and inference.
+
 ## 🚀 Usage
 
 ### 1\. Training the Model

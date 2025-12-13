@@ -5,16 +5,12 @@ import tarfile
 from six.moves import urllib
 from torchtext.legacy import data
 from torch.utils.data import Dataset
+# [NEW] Import the morphological tokenizer
+from .morph_tokenizer import morph_tokenize
 
 
 def clean_str(string):
-    """
-    Tokenization/string cleaning for Uzbek datasets.
-    """
-    # Essential Uzbek characters like ' and ‘
-    # We will perform minimal cleaning here to preserve Uzbek morphology.
-
-    string = re.sub(r"[^A-Za-z0-9(),!?\'\`‘’]", " ", string)  # Added ‘ and ’ to allowed chars
+    string = re.sub(r"[^A-Za-z0-9(),!?\'\`‘’]", " ", string)
     string = re.sub(r",", " , ", string)
     string = re.sub(r"!", " ! ", string)
     string = re.sub(r"\(", " \( ", string)
@@ -109,32 +105,33 @@ class MR(TarDataset):
                 cls(text_field, label_field, examples=examples[dev_index:]))
 
 
-class SemEval(data.Dataset):
+    class SemEval(data.Dataset):
+        @staticmethod
+        def sort_key(ex):
+            return len(ex.text)
 
-    @staticmethod
-    def sort_key(ex):
-        return len(ex.text)
+        def __init__(self, text_field, as_field, sm_field, input_data, **kwargs):
+            """
+            Updated to use morphological tokenization for the text_field.
+            """
+            # [MODIFIED] Use the morph_tokenize function
+            # Note: 'preprocessing' pipeline usually runs *after* tokenization if it's a list,
+            # but here we want to replace the tokenization logic itself in the Field,
+            # or use preprocessing to handle string cleaning before default split.
 
-    def __init__(self, text_field, as_field, sm_field, input_data, **kwargs):
-        """Create an SemEval dataset instance given a path and fields.
+            # Ideally, this is set in run.py, but we ensure the field uses it here:
+            if text_field.tokenize == 'moses':
+                # If strictly Moses was requested, we might override or prepend cleaning
+                text_field.preprocessing = data.Pipeline(clean_str)
 
-        Arguments:
-            text_field: The field that will be used for text data.
-            as_field: The field that will be used for aspect data.
-            sm_field: The field that will be used for sentiment data.
-            input_data: The examples contain all the data.
-            Remaining keyword arguments: Passed to the constructor of data.Dataset.
-        """
+            fields = [('text', text_field), ('aspect', as_field), ('sentiment', sm_field)]
 
-        text_field.preprocessing = data.Pipeline(clean_str)
-        fields = [('text', text_field), ('aspect', as_field), ('sentiment', sm_field)]
-
-        examples = []
-        for e in input_data:
-            if 'pp.' in e['sentence']:
-                continue
-            examples.append(data.Example.fromlist([e['sentence'], e['aspect'], e['sentiment']], fields))
-        super(SemEval, self).__init__(examples, fields, **kwargs)
+            examples = []
+            for e in input_data:
+                if 'pp.' in e['sentence']:
+                    continue
+                examples.append(data.Example.fromlist([e['sentence'], e['aspect'], e['sentiment']], fields))
+            super(SemEval, self).__init__(examples, fields, **kwargs)
 
     @staticmethod
     def unroll(input_data):
