@@ -13,6 +13,9 @@ The solution uses a pipeline approach to ensure high accuracy and interpretabili
     * **Model:** Gated Convolutional Networks (GCAE).
     * **Goal:** Predicts sentiment (Positive, Negative, Neutral) for the aspect terms extracted in Stage 1.
 
+![End-to-End Uzbek ABSA Architecture](graphs/absaFramework.png "Figure 1: High-level architecture of the two-stage ABSA pipeline.")
+
+*From **Figure 1** above, you can see how raw Uzbek text is first passed through the BiLSTM-CRF model for aspect term extraction. The extracted terms and the original sentence are then used as input for the GCAE model, which determines the sentiment polarity for each specific aspect.*
 ## 📌 Features
 
 * **Uzbek Language Support**: Customized for Uzbek morphology using FastText (`cc.uz.300.vec`) embeddings.
@@ -170,7 +173,14 @@ python model_files/train_ate.py --epochs 50 --batch_size 8 --lr 0.002
   * **Output:** Best model saved to `snapshot/ate_model/best_ate.pt`.
 
 
-### Stage 2: To train the model, run the following command. By default, this runs the **ACSA** task.
+### Stage 2: Train Sentiment Classifier (ACSA/ATSA)
+
+To train the model, run the following command. By default, this runs the **ACSA** (Aspect Category Sentiment Analysis) task.
+
+![Gated Convolutional Aspect Encoder](graphs/absaArchitecture.jpg "Figure 2: Detailed architecture of the GCAE model used in Stage 2.")
+
+*As shown in **Figure 2**, the GCAE model uses a gating mechanism (Tanh-ReLU) to filter the context. It selectively amplifies sentiment features that are relevant to the specific aspect category or term while suppressing irrelevant context.*
+
 
 ```bash
 python model_files/run.py -model CNN_Gate_Aspect -embed_file fasttext -epochs 10 -batch-size 32
